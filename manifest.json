@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "leewynne.omanym",
+  "name": "Omanym",
+  "version": "1.0.0",
+  "author": "leewynne",
+  "license": "MIT",
+  "description": "Name your AI, bot or agent from your Omarchy bar: a blinking hexagon robot with a Bot of the Day from namemyai.org's 900 famous robots, AIs and sci-fi characters, plus name ideas for whatever your bot does. One click copies the name.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Omanym",
+    "description": "Name your AI: a Bot of the Day from namemyai.org to copy, shuffle or look up, and name suggestions for what your bot does, from coding to research.",
+    "category": "AI",
+    "aliases": [
+      "namemyai",
+      "name",
+      "names",
+      "naming",
+      "ai",
+      "bot",
+      "robot",
+      "agent",
+      "assistant",
+      "sci-fi",
+      "eponym"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "label": "icon",
+      "animate": true
+    },
+    "schema": [
+      {
+        "key": "label",
+        "type": "enum",
+        "label": "Bar label",
+        "options": [
+          "icon",
+          "name"
+        ],
+        "defaultValue": "icon",
+        "description": "icon: the hexagon bot alone. name: the bot with the Bot of the Day's name beside it."
+      },
+      {
+        "key": "animate",
+        "type": "boolean",
+        "label": "Animate the bot",
+        "defaultValue": true,
+        "description": "Let the bot glance about and blink. Off keeps it still."
+      }
+    ]
+  }
+}
